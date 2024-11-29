@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <section>
+        <h2>Manage Categories</h2>
+        <form id="add-category-form">
+            <input type="text" id="category-name" placeholder="Category Name" required>
+            <button type="submit">Add Category</button>
+        </form>
+        <ul id="category-list">
+            <!-- Categories will be dynamically listed here -->
+        </ul>
+    </section>
+    <section>
+        <h2>Manage Words</h2>
+        <form id="add-word-form">
+            <select id="category-select">
+                <!-- Categories will be dynamically loaded here -->
+            </select>
+            <input type="text" id="word-name" placeholder="Word Name" required>
+            <input type="text" id="singular-text" placeholder="Singular (Text)" required>
+            <input type="text" id="singular-arabic" placeholder="Singular (Arabic)" required>
+            <input type="text" id="plural-text" placeholder="Plural (Text)" required>
+            <input type="text" id="plural-arabic" placeholder="Plural (Arabic)" required>
+            <button type="submit">Add Word</button>
+        </form>
+
+        <ul id="word-list">
+            <!-- Words will be dynamically listed here -->
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary | LevantAI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="vocabulary.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LevantAI</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="vocabulary.html" class="active">Vocabulary</a>
+        </nav>
+    </header>
+
+    <main class="vocabulary-page">
+        <h1>Vocabulary Categories</h1>
+        <p>Explore vocabulary categories to learn singular and plural forms of words, view images, and listen to audio pronunciations.</p>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories-section">
+            <!-- Categories will be dynamically populated here -->
+            <div id="category-list" class="category-list">
+                <p>Loading categories...</p> <!-- Placeholder while loading -->
+            </div>
+        </section>
+
+        <!-- Words Section -->
+        <section id="words" class="words-section" style="display: none;">
+            <h2 id="category-title">Category Words</h2>
+            <div id="word-list" class="word-list">
+                <!-- Words will be dynamically populated here -->
+            </div>
+            <button id="back-to-categories" onclick="goBackToCategories()">Back to Categories</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LevantAI. Learn Levantine Arabic, step by step.</p>
+    </footer>
+</body>
+</html>

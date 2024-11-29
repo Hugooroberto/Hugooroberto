@@ -1,0 +1,171 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+
+    header .logo h1 {
+        font-family: 'Inter', sans-serif; /* Clean and professional font */
+        font-size: 2.5rem; /* Adjust size for emphasis */
+        font-weight: bold;
+        color: #333; /* Neutral dark color */
+        margin: 0; /* Reset any default margin */
+    }
+/* Main layout for image and content */
+.main-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Set a max width for the layout */
+    margin: 0 auto; /* Center the layout on the page */
+    padding: 40px 20px; /* Add some padding around the layout */
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Space inside the card */
+    margin: 40px auto; /* Center card and add vertical spacing */
+    max-width: 1200px; /* Limit the card's width */
+}
+
+/* Styling for the image */
+.graphic {
+    flex: 1; /* Take up equal space */
+    padding-right: 20px; /* Add space between the image and content */
+    text-align: center;
+}
+
+    .graphic img {
+        max-width: 100%; /* Ensure the image is responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Add rounded corners for aesthetics */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+
+/* Styling for the content */
+.content {
+    flex: 1; /* Take up equal space */
+    padding-left: 20px; /* Add space between the content and image */
+    text-align: left; /* Align text to the left */
+}
+
+    .content h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+.card .content p {
+    font-family: 'Roboto', sans-serif !important; /* Force the font-family */
+}
+
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow stacking on smaller screens */
+    margin-top: 20px; /* Add spacing above the buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+/* Log In button styling */
+.log-in {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #58a700; /* Same green as "Learn" */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover */
+}
+
+    /* Hover effect for Log In button */
+    .log-in:hover {
+        background-color: #45a049; /* Slightly darker shade of green */
+    }
+
+/* Sign Up button styling */
+.sign-up {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ddd; /* Gray */
+    color: #333;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover */
+}
+
+    /* Hover effect for Sign Up button */
+    .sign-up:hover {
+        background-color: #bbb; /* Slightly darker gray */
+    }
+
+footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+    footer a {
+        color: #58a700; /* Matches "Log In" button */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #45a049; /* Slightly darker green for hover */
+        }
+
+#dynamic-text {
+    display: inline-block; /* Ensures proper spacing control */
+    margin-right: 5px; /* Add spacing between dynamic word and static text */
+}
+
+#blinking-cursor {
+    font-weight: bold;
+    font-size: 1.5rem; /* Match the size of the dynamic text */
+    color: black; /* Keep the cursor black */
+    animation: blink 1s step-end infinite; /* Blinking effect */
+    position: relative;
+    left: -6px; /* Move closer to the text */
+}
+
+
+
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
